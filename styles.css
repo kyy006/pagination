@@ -1,0 +1,50 @@
+.app {
+  background-color: white;
+  font-family: JetBrains Mono sans-serif;
+  line-height: 40px;
+  font-size: 20px;
+}
+
+input {
+  width: 60px;
+  height: 25px;
+}
+
+hr {
+  border: 0;
+  height: 2px;
+  background-color: #333;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.display {
+  display: flex;
+}
+.pagination-btn {
+  padding: 5px 10px;
+  margin: 0 2px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  width: 40px;
+}
+
+.pagination-btn.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.pagination-btn.disabled {
+  cursor: not-allowed;
+}
+
+.quick-set-item {
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+}
+
+.quick-set-item button {
+  margin: 10px;
+}

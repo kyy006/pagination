@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="item-per-page">
+        <label for="item-per-page">Items per page: </label>
+        <input id="item-per-page" type="number" value="5" />
+      </div>
+      <div class="total-items">
+        <label for="total-items">Total items: </label>
+        <input id="total-items" type="number" value="202" />
+      </div>
+      <hr />
+      <div class="display">
+        Showing:&nbsp;
+        <div id="item-number">1 - 5 of 202</div>
+      </div>
+      <hr />
+      <div id="pagination"></div>
+      <hr />
+      <div id="pagination-all"></div>
+      <hr />
+      <div class="quick-set">
+        Quick Set:
+        <div class="quick-set-item">
+          41 buttons
+          <button onClick="quickSet(202,5)">Set</button>
+        </div>
+
+        <div class="quick-set-item">
+          7 buttons
+          <button onClick="quickSet(7,1)">Set</button>
+        </div>
+        <div class="quick-set-item">
+          5 buttons
+          <button onClick="quickSet(20,4)">Set</button>
+        </div>
+        <div class="quick-set-item">
+          1 buttons
+          <button onClick="quickSet(5,5)">Set</button>
+        </div>
+        <div class="quick-set-item">
+          200 buttons
+          <button onClick="quickSet(1000,5)">Set</button>
+        </div>
+      </div>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+  </body>
+</html>
